@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    max-width: 1170px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .logo .imagem {
+    width: 100px;
+}
+
+.logo .titulo {
+    margin-left: 7px;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.logo .titulo:hover {
+    color: #1ED760;
+}
+
+.cabecalho .navegacao .menu {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .navegacao .menu .item {
+    margin: 10px;
+}
+
+.cabecalho .navegacao .menu .item a {
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.cabecalho .navegacao .menu .item a:hover {
+    background-color: #1ED760;
+    color: #FFF;
+}
+
+.conteudo-principal .paineis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    position: relative;
+}
+
+.conteudo-principal .paineis .titulo {
+    color: white;
+    font-size: calc(1em + 1vw);
+    text-transform: uppercase;
+}
+
+.conteudo-principal .paineis .imagem-painel {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+}
+
+.conteudo-principal .paineis .projeto1 {
+    background-image: url('../img/painel1.jpg');
+}
+
+.conteudo-principal .paineis .projeto2 {
+    background-image: url('../img/painel2.jpg');
+}
+
+.conteudo-principal .paineis .projeto3 {
+    background-image: url('../img/painel3.jpg');
+}
+
+.conteudo-principal .paineis .seta {
+    background-image: url('../img/seta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar {
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar {
+    right: 20px;
+}
+
+.quem-somos {
+    background-color: #2941AB;
+}
+
+.quem-somos .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.quem-somos .conteudo .informacoes {
+    width: 48%;
+}
+
+.quem-somos .conteudo .informacoes .titulo {
+    font-size: 50px;
+    color: #1ED760;
+    margin-bottom: 20px;
+}
+
+.quem-somos .conteudo .informacoes .texto {
+    line-height: 1.5;
+    color: #FFF;
+    font-weight: 300;
+}
+
+.quem-somos .conteudo .imagem {
+    width: 60%;
+}
+
+.rodape {
+    padding: 80px 0 20px 0;
+}
+
+.rodape .navegacao {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape .navegacao .logo .imagem {
+    width: 50px;
+}
+
+.rodape .redes-sociais {
+    display: flex;
+}
+
+.rodape .redes-sociais a {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .redes-sociais a:hover {
+    background-color: #1ed75f94;
+}
+
+.rodape .copyright {
+    margin-top: 70px;
+    text-align: center;
+}
+
+@media(max-width: 624px) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .cabecalho .logo {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 900px) {
+    .conteudo-principal .paineis {
+        height: 500px;
+    }
+
+    .conteudo-principal .quem-somos .conteudo {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 10px;
+    }
+
+    .conteudo-principal .quem-somos .imagem {
+        display: none;
+    }
+
+    .conteudo-principal .quem-somos .informacoes {
+        width: 100%;;
+    }
+}
+
+@media(max-width: 940px) {
+    .rodape .navegacao {
+        justify-content: center;
+    }
+
+    .rodape .navegacao .logo {
+        margin-bottom: 30px;
+    }
+}

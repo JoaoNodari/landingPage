@@ -77,6 +77,9 @@ body {
     position: absolute;
     z-index: -1;
     filter: brightness(70%);
+
+    opacity: 0;
+    transition: 0.3 ease-in-out;
 }
 
 .conteudo-principal .paineis .projeto1 {
@@ -89,6 +92,10 @@ body {
 
 .conteudo-principal .paineis .projeto3 {
     background-image: url('../img/painel3.jpg');
+}
+
+.conteudo-principal .paineis .imagem-painel.mostrar {
+    opacity: 1;
 }
 
 .conteudo-principal .paineis .seta {
@@ -217,6 +224,7 @@ body {
 @media(max-width: 940px) {
     .rodape .navegacao {
         justify-content: center;
+        flex-direction: column;
     }
 
     .rodape .navegacao .logo {
